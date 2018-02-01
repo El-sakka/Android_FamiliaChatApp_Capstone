@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FamiliaChatApp</string>
+    <string name="send_button">Send</string>
+    <string name="sign_out">Sign out</string>
+    <string name="image">Image</string>
+    <string name="admin_information">Admin information: Name: MahmoudElsakka        Email:mahmoudelsakka95@gmail.com</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="HiMahmoud">Hi Mahmoud</string>
+</resources>

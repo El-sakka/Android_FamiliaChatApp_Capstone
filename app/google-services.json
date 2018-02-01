@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "485365158047",
+    "firebase_url": "https://familiachat-7a283.firebaseio.com",
+    "project_id": "familiachat-7a283",
+    "storage_bucket": "familiachat-7a283.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485365158047:android:26a8b82d90a4bcda",
+        "android_client_info": {
+          "package_name": "com.sakkay.familiachatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485365158047-pu41eck0e18m7pg9j06p8du148lfjhe9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sakkay.familiachatapp",
+            "certificate_hash": "5dacfc92d9dd2c3833cb7628fdeaee8bb88a50e9"
+          }
+        },
+        {
+          "client_id": "485365158047-28cflpmqq4r9ham5a6153nbien471ef4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsVF361pQ_Q1r19vpqjLEcNZnzIiUDOKU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485365158047-28cflpmqq4r9ham5a6153nbien471ef4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

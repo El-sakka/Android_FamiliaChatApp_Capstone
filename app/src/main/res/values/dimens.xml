@@ -8,4 +8,7 @@ Refer to App Widget Documentation for margin information
 http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
     -->
     <dimen name="widget_margin">8dp</dimen>
+    <dimen name="circle_width">68</dimen>
+    <dimen name="circle_hight">68dp</dimen>
+    <dimen name="user_size">24sp</dimen>
 </resources>

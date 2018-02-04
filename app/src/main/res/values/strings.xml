@@ -7,4 +7,9 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="HiMahmoud">Hi Mahmoud</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="send_image">Choose Image And Send</string>
+    <string name="contact_activity">All Contacts</string>
+    <string name="contacts">Contacts</string>
+    <string name="user_photo">UserPhoto</string>
 </resources>

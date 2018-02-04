@@ -3,7 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/contact_activity"
+        android:title="@string/contact_activity"
+        app:showAsAction="never"
+        />
+    <item
         android:id="@+id/sign_out_menu"
         android:title="@string/sign_out"
         app:showAsAction="never"/>
+
 </menu>

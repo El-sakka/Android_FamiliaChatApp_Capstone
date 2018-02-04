@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -21,6 +22,8 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -81,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
+
+        AdView adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         mUsername = ANONYMOUS;
 
@@ -263,6 +270,7 @@ public class MainActivity extends AppCompatActivity {
                         this, new OnSuccessListener<UploadTask.TaskSnapshot>() {
                             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                                 Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                                Log.d("a7a", "onSuccess: "+downloadUrl);
                                 Message message = new Message(null,mUsername,downloadUrl.toString());
                                 mMessagesDatabaseReference.push().setValue(message);
 
@@ -303,6 +311,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.sign_out_menu:
                 AuthUI.getInstance().signOut(this);
                 return true;
+            case R.id.contact_activity:
+                Intent intent = new Intent(this,ContactActivity.class);
+                overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_right);
+                startActivity(intent);
             default:
                 return super.onOptionsItemSelected(item);
         }
